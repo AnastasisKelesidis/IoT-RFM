@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Monitoring</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Alpha Demo</h1>
+    </header>
+
+    <main>
+        <div class="frame-container">
+            <!-- Dashboard Frame -->
+            <div class="frame" id="dashboard-frame">
+                <iframe src="https://labserver.sense-campus.gr:8087/d-solo/ce5b2eqqo09hcf/alpha3671?from=1732378080000&to=1732378980000&timezone=browser&tab=queries&orgId=2&panelId=1&__feature.dashboardSceneSolo" width="100%" height="500" frameborder="0"></iframe>
+            </div>
+
+            <!-- Widget Toggle Frame -->
+            <div class="frame" id="widget-frame">
+                <div class="centered-content">
+                    <h2>Solar Panel Switch</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Farm Monitoring</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
