@@ -42,7 +42,7 @@ def update_button():
 # Endpoint to retrieve the button state (GET)
 @app.route('/get_button', methods=['GET'])
 def get_button():
-    return jsonify({"button_state": button_state})
+    return jsonify(button_state)
 
 @app.route('/debug', methods=['GET'])
 def debug_state():
