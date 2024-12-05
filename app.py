@@ -42,6 +42,12 @@ def update_button():
 # Endpoint to retrieve the button state (GET)
 @app.route('/get_button', methods=['GET'])
 def get_button():
+    return jsonify({"button_state": button_state})
+
+@app.route('/debug', methods=['GET'])
+def debug_state():
+    global button_state
+    app.logger.info(f"Debugging button state: {button_state}")
     return jsonify(button_state)
 
 if __name__ == '__main__':
